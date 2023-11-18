@@ -33,5 +33,5 @@ a svg {
   font-size: 2rem;
 }
 .listFooter li a {
-  color: #fff;
+  color: #fff !important;
 }
