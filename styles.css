@@ -6,25 +6,67 @@ body {
 .logo-navbar {
   max-width: 150px;
 }
+.bg-dark {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
 h1 {
   font-size: 75px;
   color: #e4f2ff;
   text-transform: uppercase;
 }
+
+.btn-outline-light {
+  --bs-btn-color: #f8f9fa;
+  --bs-btn-border-color: #2c363f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #2c363f;
+  --bs-btn-hover-border-color: #2c363f;
+  --bs-btn-focus-shadow-rgb: 248, 249, 250;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f8f9fa;
+  --bs-btn-active-border-color: #f8f9fa;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #f8f9fa;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #f8f9fa;
+  --bs-gradient: none;
+}
+
+.btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+}
+
 .remarcador {
   color: #add2ff;
 }
-h3 {
+h4 {
   color: #e4f2ff;
 }
 a svg {
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
   color: #add2ff;
+}
+#Home {
+  padding-top: 50px;
+}
+
+.socilaMedia {
+  margin-top: 50px;
 }
 
 .morado {
   background-color: #9300ff;
+}
+.imgDerecha {
+  width: 600px !important;
 }
 .img-left {
 }
@@ -34,4 +76,9 @@ a svg {
 }
 .listFooter li a {
   color: #fff !important;
+}
+@media (max-width: 600px) {
+  #Home {
+    padding-top: 50px;
+  }
 }
